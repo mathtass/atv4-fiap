@@ -1,0 +1,12 @@
+<h1>Lista Usuários</h1>
+<div *ngFor="let user of users">
+    <h3><a [routerLink]="['/users',user.id]">{{user.name}}</a></h3>
+    <h3>Saldo:{{user.saldo}}</h3>
+    <h3>Bilhetes:{{user.saldo}}</h3>
+    <button (click)="share()">Comprar Bilhete</button>
+<app-users-alert
+    [user]="user"
+    (notify)="onNotify()">
+</app-users-alert>
+
+</div>

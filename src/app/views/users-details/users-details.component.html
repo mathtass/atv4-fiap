@@ -1,0 +1,10 @@
+
+<h1>Dados dos Usuários</h1>
+
+<div *ngIf="users">
+    <h3> {{ users.name }}</h3>
+    <h3> {{ users.login }}</h3>
+    <h3> Saldo: {{ users.saldo }}</h3>
+    <h3>  Bilhetes: {{ users.bilhetes }}</h3>
+   <button (click)="addToCart(users.name)">Recarregar</button>
+</div>
