@@ -3,14 +3,14 @@
     <span>{{item.saldo | currency}}</span>
 </div>
 
-<form [formGroup]="checkoutForm">
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
 
-    <div>
+    <!-- <div>
       <label for="name">
         Nome
       </label>
       <input id="name" type="text" formControlName="name">
-    </div>
+    </div> -->
   
     <div>
       <label for="recarga">

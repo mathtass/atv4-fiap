@@ -18,5 +18,12 @@ export class CartComponent implements OnInit {
   ){}
   ngOnInit(): void {
       }
+  onSubmit(){
+    this.items = this.cartService.clearCart();
+    console.warn("Saldo Atualizado", this.checkoutForm.value);
+    console.log(this.items);
+    alert("Recarga Realizada")
+    this.checkoutForm.reset();
+  }
 
 }
