@@ -1,4 +1,24 @@
 <div class="cart-item" *ngFor="let item of items">
     <span>{{item.name}}</span>
-    <span>{{item.price }}</span>
+    <span>{{item.saldo | currency}}</span>
 </div>
+
+<form [formGroup]="checkoutForm">
+
+    <div>
+      <label for="name">
+        Nome
+      </label>
+      <input id="name" type="text" formControlName="name">
+    </div>
+  
+    <div>
+      <label for="recarga">
+        Recarga
+      </label>
+      <input id="recarga" type="text" formControlName="address">
+    </div>
+  
+    <button class="button" type="submit">Comprar</button>
+  
+  </form>

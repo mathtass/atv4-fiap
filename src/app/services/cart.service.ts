@@ -21,5 +21,7 @@ export class CartService {
     this.items = [];
     return aux;
   }
-  
+  getShippingPrice(){
+    return this.http.get<{type: string, saldo:number}>("/assets/shipping.json");
+  }
 }

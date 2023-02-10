@@ -8,6 +8,8 @@ import { TopBarComponent } from './views/top-bar/top-bar.component';
 import { UsersAlertComponent } from './views/users-alert/users-alert.component';
 import { UsersDetailsComponent } from './views/users-details/users-details.component';
 import { CartComponent } from './views/cart/cart.component';
+import { ShippingComponent } from './views/shipping/shipping.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,12 +18,14 @@ import { CartComponent } from './views/cart/cart.component';
     TopBarComponent,
     UsersAlertComponent,
     UsersDetailsComponent,
-    CartComponent
+    CartComponent,
+    ShippingComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
