@@ -1,0 +1,10 @@
+[
+    {"type":"Overnight",
+    "saldo":10
+},
+    {"type":"2-Day",
+     "saldo":20
+    },
+     {"type":"Postal",
+     "saldo":20}
+]

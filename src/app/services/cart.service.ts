@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -5,7 +6,9 @@ import { Injectable } from '@angular/core';
 })
 export class CartService {
   items: any[] = [];
-  constructor() { }
+  constructor(
+    private http: HttpClient
+  ) { }
 
   addToCart(user:any){
     this.items.push(user);
@@ -18,4 +21,5 @@ export class CartService {
     this.items = [];
     return aux;
   }
+  
 }
